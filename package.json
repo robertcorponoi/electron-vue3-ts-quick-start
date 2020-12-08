@@ -1,0 +1,52 @@
+{
+  "name": "electron-vue3-ts-quick-start",
+  "version": "0.1.0",
+  "description": "Electron Vue3 Typscript Quick Start",
+  "author": "You",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron ./electron/main.js",
+    "build:dev": "vue-cli-service build",
+    "build:dev:watch": "vue-cli-service build --watch",
+    "build:prod": "vue-cli-service build --modern --production",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "dist": "npm run build:prod && electron-builder",
+    "dist:mac": "npm run build:prod && electron-builder --mac",
+    "dist:linux": "npm run build:prod && electron-builder --linux",
+    "dist:windows": "npm run build:prod && electron-builder --windows",
+    "dist:all": "npm run build:prod && electron-builder --mac --linux --windows"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "dotenv": "^8.2.0",
+    "vue": "^3.0.0",
+    "vue-class-component": "^8.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^5.2.4",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-plugin-unit-mocha": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "^2.0.0-0",
+    "chai": "^4.1.2",
+    "electron": "^11.0.3",
+    "electron-builder": "^22.9.1",
+    "electron-reloader": "^1.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "typescript": "~3.9.3"
+  }
+}
