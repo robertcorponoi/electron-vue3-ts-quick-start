@@ -49,3 +49,5 @@ To develop, you need to follow the steps below every time you begin working on i
 2. Run `npm run start` to start Electron.
 
 Now, with both of these running, whenever you make a change to the files Electron uses or the Vue files, the Electron window will update automatically.
+
+**Note:** The electron files are not Typescript so that they can be reloaded with electron-reloader.
